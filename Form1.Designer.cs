@@ -29,10 +29,14 @@
 		private void InitializeComponent()
 		{
 			this.PanelMenu = new System.Windows.Forms.Panel();
-			this.btn_Conectar = new System.Windows.Forms.Button();
+			this.btn_request = new System.Windows.Forms.Button();
+			this.btn_Tiempo = new System.Windows.Forms.Button();
+			this.txt_tiempo = new System.Windows.Forms.TextBox();
+			this.lbl_tiempo = new System.Windows.Forms.Label();
 			this.btn_Configuraciones = new System.Windows.Forms.Button();
 			this.btn_Panel = new System.Windows.Forms.Button();
 			this.PanelLogo = new System.Windows.Forms.Panel();
+			this.btn_Conectar = new System.Windows.Forms.Button();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panelfecha = new System.Windows.Forms.Panel();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -55,15 +59,49 @@
 			this.lbl_Fecha = new System.Windows.Forms.Label();
 			this.lbl_hora = new System.Windows.Forms.Label();
 			this.txt_Cadena = new System.Windows.Forms.TextBox();
-			this.lbl_tiempo = new System.Windows.Forms.Label();
-			this.txt_tiempo = new System.Windows.Forms.TextBox();
-			this.btn_Tiempo = new System.Windows.Forms.Button();
-			this.btn_request = new System.Windows.Forms.Button();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.panel5 = new System.Windows.Forms.Panel();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.panel7 = new System.Windows.Forms.Panel();
+			this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
+			this.panel8 = new System.Windows.Forms.Panel();
+			this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
+			this.panel9 = new System.Windows.Forms.Panel();
+			this.circularProgressBar3 = new CircularProgressBar.CircularProgressBar();
+			this.lbl_Sensor1 = new System.Windows.Forms.Label();
+			this.lbl_Sensor2 = new System.Windows.Forms.Label();
+			this.lbl_Sensor3 = new System.Windows.Forms.Label();
+			this.txt_LIS1 = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txt_LSS1 = new System.Windows.Forms.TextBox();
+			this.btn_CambiosS1 = new System.Windows.Forms.Button();
+			this.btn_CambiosS2 = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
+			this.txt_LSS2 = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.txt_LIS2 = new System.Windows.Forms.TextBox();
+			this.btn_CambiosS3 = new System.Windows.Forms.Button();
+			this.label5 = new System.Windows.Forms.Label();
+			this.txt_LSS3 = new System.Windows.Forms.TextBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.txt_LIS3 = new System.Windows.Forms.TextBox();
+			this.btn_CambiarTodo = new System.Windows.Forms.Button();
 			this.PanelMenu.SuspendLayout();
 			this.PanelLogo.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.panelfecha.SuspendLayout();
 			this.panel1.SuspendLayout();
+			this.panel2.SuspendLayout();
+			this.panel3.SuspendLayout();
+			this.panel4.SuspendLayout();
+			this.panel5.SuspendLayout();
+			this.panel6.SuspendLayout();
+			this.panel7.SuspendLayout();
+			this.panel8.SuspendLayout();
+			this.panel9.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// PanelMenu
@@ -79,21 +117,55 @@
 			this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
 			this.PanelMenu.Location = new System.Drawing.Point(0, 0);
 			this.PanelMenu.Name = "PanelMenu";
-			this.PanelMenu.Size = new System.Drawing.Size(197, 698);
+			this.PanelMenu.Size = new System.Drawing.Size(175, 709);
 			this.PanelMenu.TabIndex = 3;
 			// 
-			// btn_Conectar
+			// btn_request
 			// 
-			this.btn_Conectar.FlatAppearance.BorderSize = 0;
-			this.btn_Conectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_Conectar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-			this.btn_Conectar.Location = new System.Drawing.Point(0, 3);
-			this.btn_Conectar.Name = "btn_Conectar";
-			this.btn_Conectar.Size = new System.Drawing.Size(197, 91);
-			this.btn_Conectar.TabIndex = 6;
-			this.btn_Conectar.Text = "Conectar";
-			this.btn_Conectar.UseVisualStyleBackColor = true;
-			this.btn_Conectar.Click += new System.EventHandler(this.btn_Conectar_Click);
+			this.btn_request.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btn_request.FlatAppearance.BorderSize = 0;
+			this.btn_request.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_request.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.btn_request.Location = new System.Drawing.Point(0, 187);
+			this.btn_request.Name = "btn_request";
+			this.btn_request.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+			this.btn_request.Size = new System.Drawing.Size(175, 40);
+			this.btn_request.TabIndex = 10;
+			this.btn_request.Text = "Solicitar Variables";
+			this.btn_request.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btn_request.UseVisualStyleBackColor = true;
+			this.btn_request.Click += new System.EventHandler(this.btn_request_Click);
+			// 
+			// btn_Tiempo
+			// 
+			this.btn_Tiempo.FlatAppearance.BorderSize = 0;
+			this.btn_Tiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_Tiempo.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+			this.btn_Tiempo.Location = new System.Drawing.Point(33, 355);
+			this.btn_Tiempo.Name = "btn_Tiempo";
+			this.btn_Tiempo.Size = new System.Drawing.Size(110, 37);
+			this.btn_Tiempo.TabIndex = 9;
+			this.btn_Tiempo.Text = "Cambiar";
+			this.btn_Tiempo.UseVisualStyleBackColor = true;
+			this.btn_Tiempo.Click += new System.EventHandler(this.btn_Tiempo_Click);
+			// 
+			// txt_tiempo
+			// 
+			this.txt_tiempo.Location = new System.Drawing.Point(12, 322);
+			this.txt_tiempo.Name = "txt_tiempo";
+			this.txt_tiempo.Size = new System.Drawing.Size(152, 22);
+			this.txt_tiempo.TabIndex = 9;
+			this.txt_tiempo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tiempo_KeyPress);
+			// 
+			// lbl_tiempo
+			// 
+			this.lbl_tiempo.AutoSize = true;
+			this.lbl_tiempo.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_tiempo.Location = new System.Drawing.Point(46, 287);
+			this.lbl_tiempo.Name = "lbl_tiempo";
+			this.lbl_tiempo.Size = new System.Drawing.Size(97, 17);
+			this.lbl_tiempo.TabIndex = 9;
+			this.lbl_tiempo.Text = "Tiempo = 0ms";
 			// 
 			// btn_Configuraciones
 			// 
@@ -104,7 +176,7 @@
 			this.btn_Configuraciones.Location = new System.Drawing.Point(0, 147);
 			this.btn_Configuraciones.Name = "btn_Configuraciones";
 			this.btn_Configuraciones.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-			this.btn_Configuraciones.Size = new System.Drawing.Size(197, 40);
+			this.btn_Configuraciones.Size = new System.Drawing.Size(175, 40);
 			this.btn_Configuraciones.TabIndex = 3;
 			this.btn_Configuraciones.Text = "Identificar";
 			this.btn_Configuraciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,7 +192,7 @@
 			this.btn_Panel.Location = new System.Drawing.Point(0, 97);
 			this.btn_Panel.Name = "btn_Panel";
 			this.btn_Panel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btn_Panel.Size = new System.Drawing.Size(197, 50);
+			this.btn_Panel.Size = new System.Drawing.Size(175, 50);
 			this.btn_Panel.TabIndex = 3;
 			this.btn_Panel.Text = "Panel";
 			this.btn_Panel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,8 +205,21 @@
 			this.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top;
 			this.PanelLogo.Location = new System.Drawing.Point(0, 0);
 			this.PanelLogo.Name = "PanelLogo";
-			this.PanelLogo.Size = new System.Drawing.Size(197, 97);
+			this.PanelLogo.Size = new System.Drawing.Size(175, 97);
 			this.PanelLogo.TabIndex = 2;
+			// 
+			// btn_Conectar
+			// 
+			this.btn_Conectar.FlatAppearance.BorderSize = 0;
+			this.btn_Conectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_Conectar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+			this.btn_Conectar.Location = new System.Drawing.Point(0, 3);
+			this.btn_Conectar.Name = "btn_Conectar";
+			this.btn_Conectar.Size = new System.Drawing.Size(197, 91);
+			this.btn_Conectar.TabIndex = 6;
+			this.btn_Conectar.Text = "Conectar";
+			this.btn_Conectar.UseVisualStyleBackColor = true;
+			this.btn_Conectar.Click += new System.EventHandler(this.btn_Conectar_Click);
 			// 
 			// pictureBox2
 			// 
@@ -152,9 +237,9 @@
 			this.panelfecha.Controls.Add(this.lbl_Fecha);
 			this.panelfecha.Controls.Add(this.lbl_hora);
 			this.panelfecha.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelfecha.Location = new System.Drawing.Point(197, 0);
+			this.panelfecha.Location = new System.Drawing.Point(175, 0);
 			this.panelfecha.Name = "panelfecha";
-			this.panelfecha.Size = new System.Drawing.Size(870, 100);
+			this.panelfecha.Size = new System.Drawing.Size(861, 100);
 			this.panelfecha.TabIndex = 7;
 			// 
 			// panel1
@@ -351,67 +436,393 @@
 			// 
 			// txt_Cadena
 			// 
-			this.txt_Cadena.Location = new System.Drawing.Point(359, 111);
+			this.txt_Cadena.Location = new System.Drawing.Point(174, 11);
 			this.txt_Cadena.Name = "txt_Cadena";
 			this.txt_Cadena.Size = new System.Drawing.Size(486, 22);
 			this.txt_Cadena.TabIndex = 8;
 			// 
-			// lbl_tiempo
+			// panel2
 			// 
-			this.lbl_tiempo.AutoSize = true;
-			this.lbl_tiempo.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.lbl_tiempo.Location = new System.Drawing.Point(46, 287);
-			this.lbl_tiempo.Name = "lbl_tiempo";
-			this.lbl_tiempo.Size = new System.Drawing.Size(97, 17);
-			this.lbl_tiempo.TabIndex = 9;
-			this.lbl_tiempo.Text = "Tiempo = 0ms";
+			this.panel2.BackColor = System.Drawing.Color.Red;
+			this.panel2.Controls.Add(this.panel5);
+			this.panel2.Controls.Add(this.panel6);
+			this.panel2.Controls.Add(this.panel4);
+			this.panel2.Controls.Add(this.panel3);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel2.Location = new System.Drawing.Point(175, 100);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(861, 609);
+			this.panel2.TabIndex = 9;
 			// 
-			// txt_tiempo
+			// panel3
 			// 
-			this.txt_tiempo.Location = new System.Drawing.Point(12, 322);
-			this.txt_tiempo.Name = "txt_tiempo";
-			this.txt_tiempo.Size = new System.Drawing.Size(152, 22);
-			this.txt_tiempo.TabIndex = 9;
-			this.txt_tiempo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tiempo_KeyPress);
+			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel3.Controls.Add(this.txt_Cadena);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel3.Location = new System.Drawing.Point(0, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(861, 47);
+			this.panel3.TabIndex = 0;
 			// 
-			// btn_Tiempo
+			// panel4
 			// 
-			this.btn_Tiempo.FlatAppearance.BorderSize = 0;
-			this.btn_Tiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_Tiempo.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-			this.btn_Tiempo.Location = new System.Drawing.Point(33, 355);
-			this.btn_Tiempo.Name = "btn_Tiempo";
-			this.btn_Tiempo.Size = new System.Drawing.Size(110, 37);
-			this.btn_Tiempo.TabIndex = 9;
-			this.btn_Tiempo.Text = "Cambiar";
-			this.btn_Tiempo.UseVisualStyleBackColor = true;
-			this.btn_Tiempo.Click += new System.EventHandler(this.btn_Tiempo_Click);
+			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel4.Controls.Add(this.btn_CambiosS3);
+			this.panel4.Controls.Add(this.label5);
+			this.panel4.Controls.Add(this.txt_LSS3);
+			this.panel4.Controls.Add(this.label6);
+			this.panel4.Controls.Add(this.txt_LIS3);
+			this.panel4.Controls.Add(this.lbl_Sensor3);
+			this.panel4.Controls.Add(this.panel9);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+			this.panel4.Location = new System.Drawing.Point(661, 47);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(200, 562);
+			this.panel4.TabIndex = 1;
 			// 
-			// btn_request
+			// panel5
 			// 
-			this.btn_request.Dock = System.Windows.Forms.DockStyle.Top;
-			this.btn_request.FlatAppearance.BorderSize = 0;
-			this.btn_request.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_request.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.btn_request.Location = new System.Drawing.Point(0, 187);
-			this.btn_request.Name = "btn_request";
-			this.btn_request.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-			this.btn_request.Size = new System.Drawing.Size(197, 40);
-			this.btn_request.TabIndex = 10;
-			this.btn_request.Text = "Solicitar Variables";
-			this.btn_request.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btn_request.UseVisualStyleBackColor = true;
-			this.btn_request.Click += new System.EventHandler(this.btn_request_Click);
+			this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel5.Controls.Add(this.btn_CambiosS1);
+			this.panel5.Controls.Add(this.label2);
+			this.panel5.Controls.Add(this.txt_LSS1);
+			this.panel5.Controls.Add(this.label1);
+			this.panel5.Controls.Add(this.txt_LIS1);
+			this.panel5.Controls.Add(this.lbl_Sensor1);
+			this.panel5.Controls.Add(this.panel7);
+			this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panel5.Location = new System.Drawing.Point(0, 47);
+			this.panel5.Name = "panel5";
+			this.panel5.Size = new System.Drawing.Size(200, 562);
+			this.panel5.TabIndex = 2;
+			// 
+			// panel6
+			// 
+			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel6.Controls.Add(this.btn_CambiarTodo);
+			this.panel6.Controls.Add(this.btn_CambiosS2);
+			this.panel6.Controls.Add(this.label3);
+			this.panel6.Controls.Add(this.txt_LSS2);
+			this.panel6.Controls.Add(this.label4);
+			this.panel6.Controls.Add(this.txt_LIS2);
+			this.panel6.Controls.Add(this.lbl_Sensor2);
+			this.panel6.Controls.Add(this.panel8);
+			this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel6.Location = new System.Drawing.Point(0, 47);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(661, 562);
+			this.panel6.TabIndex = 3;
+			// 
+			// panel7
+			// 
+			this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel7.Controls.Add(this.circularProgressBar1);
+			this.panel7.Location = new System.Drawing.Point(6, 66);
+			this.panel7.Name = "panel7";
+			this.panel7.Size = new System.Drawing.Size(191, 203);
+			this.panel7.TabIndex = 0;
+			// 
+			// circularProgressBar1
+			// 
+			this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+			this.circularProgressBar1.AnimationSpeed = 500;
+			this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+			this.circularProgressBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+			this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.circularProgressBar1.InnerMargin = 2;
+			this.circularProgressBar1.InnerWidth = -1;
+			this.circularProgressBar1.Location = new System.Drawing.Point(0, 0);
+			this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+			this.circularProgressBar1.Name = "circularProgressBar1";
+			this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
+			this.circularProgressBar1.OuterMargin = -25;
+			this.circularProgressBar1.OuterWidth = 26;
+			this.circularProgressBar1.ProgressColor = System.Drawing.Color.Red;
+			this.circularProgressBar1.ProgressWidth = 25;
+			this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+			this.circularProgressBar1.Size = new System.Drawing.Size(191, 203);
+			this.circularProgressBar1.StartAngle = 270;
+			this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+			this.circularProgressBar1.SubscriptText = ".23";
+			this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+			this.circularProgressBar1.SuperscriptText = "°C";
+			this.circularProgressBar1.TabIndex = 0;
+			this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+			this.circularProgressBar1.Value = 68;
+			// 
+			// panel8
+			// 
+			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel8.Controls.Add(this.circularProgressBar2);
+			this.panel8.Location = new System.Drawing.Point(333, 66);
+			this.panel8.Name = "panel8";
+			this.panel8.Size = new System.Drawing.Size(191, 203);
+			this.panel8.TabIndex = 1;
+			// 
+			// circularProgressBar2
+			// 
+			this.circularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+			this.circularProgressBar2.AnimationSpeed = 500;
+			this.circularProgressBar2.BackColor = System.Drawing.Color.Transparent;
+			this.circularProgressBar2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.circularProgressBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+			this.circularProgressBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.circularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.circularProgressBar2.InnerMargin = 2;
+			this.circularProgressBar2.InnerWidth = -1;
+			this.circularProgressBar2.Location = new System.Drawing.Point(0, 0);
+			this.circularProgressBar2.MarqueeAnimationSpeed = 2000;
+			this.circularProgressBar2.Name = "circularProgressBar2";
+			this.circularProgressBar2.OuterColor = System.Drawing.Color.Gray;
+			this.circularProgressBar2.OuterMargin = -25;
+			this.circularProgressBar2.OuterWidth = 26;
+			this.circularProgressBar2.ProgressColor = System.Drawing.Color.Cyan;
+			this.circularProgressBar2.ProgressWidth = 25;
+			this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+			this.circularProgressBar2.Size = new System.Drawing.Size(191, 203);
+			this.circularProgressBar2.StartAngle = 270;
+			this.circularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+			this.circularProgressBar2.SubscriptText = ".23";
+			this.circularProgressBar2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.circularProgressBar2.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+			this.circularProgressBar2.SuperscriptText = "°C";
+			this.circularProgressBar2.TabIndex = 0;
+			this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+			this.circularProgressBar2.Value = 68;
+			// 
+			// panel9
+			// 
+			this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel9.Controls.Add(this.circularProgressBar3);
+			this.panel9.Location = new System.Drawing.Point(6, 66);
+			this.panel9.Name = "panel9";
+			this.panel9.Size = new System.Drawing.Size(191, 203);
+			this.panel9.TabIndex = 2;
+			// 
+			// circularProgressBar3
+			// 
+			this.circularProgressBar3.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+			this.circularProgressBar3.AnimationSpeed = 500;
+			this.circularProgressBar3.BackColor = System.Drawing.Color.Transparent;
+			this.circularProgressBar3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.circularProgressBar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+			this.circularProgressBar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.circularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.circularProgressBar3.InnerMargin = 2;
+			this.circularProgressBar3.InnerWidth = -1;
+			this.circularProgressBar3.Location = new System.Drawing.Point(0, 0);
+			this.circularProgressBar3.MarqueeAnimationSpeed = 2000;
+			this.circularProgressBar3.Name = "circularProgressBar3";
+			this.circularProgressBar3.OuterColor = System.Drawing.Color.Gray;
+			this.circularProgressBar3.OuterMargin = -25;
+			this.circularProgressBar3.OuterWidth = 26;
+			this.circularProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+			this.circularProgressBar3.ProgressWidth = 25;
+			this.circularProgressBar3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+			this.circularProgressBar3.Size = new System.Drawing.Size(191, 203);
+			this.circularProgressBar3.StartAngle = 270;
+			this.circularProgressBar3.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.circularProgressBar3.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+			this.circularProgressBar3.SubscriptText = ".23";
+			this.circularProgressBar3.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.circularProgressBar3.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+			this.circularProgressBar3.SuperscriptText = "°C";
+			this.circularProgressBar3.TabIndex = 0;
+			this.circularProgressBar3.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+			this.circularProgressBar3.Value = 68;
+			// 
+			// lbl_Sensor1
+			// 
+			this.lbl_Sensor1.AutoSize = true;
+			this.lbl_Sensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_Sensor1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_Sensor1.Location = new System.Drawing.Point(6, 8);
+			this.lbl_Sensor1.Name = "lbl_Sensor1";
+			this.lbl_Sensor1.Size = new System.Drawing.Size(128, 32);
+			this.lbl_Sensor1.TabIndex = 2;
+			this.lbl_Sensor1.Text = "Sensor 1";
+			// 
+			// lbl_Sensor2
+			// 
+			this.lbl_Sensor2.AutoSize = true;
+			this.lbl_Sensor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_Sensor2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_Sensor2.Location = new System.Drawing.Point(312, 8);
+			this.lbl_Sensor2.Name = "lbl_Sensor2";
+			this.lbl_Sensor2.Size = new System.Drawing.Size(128, 32);
+			this.lbl_Sensor2.TabIndex = 3;
+			this.lbl_Sensor2.Text = "Sensor 2";
+			// 
+			// lbl_Sensor3
+			// 
+			this.lbl_Sensor3.AutoSize = true;
+			this.lbl_Sensor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_Sensor3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_Sensor3.Location = new System.Drawing.Point(6, 8);
+			this.lbl_Sensor3.Name = "lbl_Sensor3";
+			this.lbl_Sensor3.Size = new System.Drawing.Size(128, 32);
+			this.lbl_Sensor3.TabIndex = 4;
+			this.lbl_Sensor3.Text = "Sensor 3";
+			// 
+			// txt_LIS1
+			// 
+			this.txt_LIS1.Location = new System.Drawing.Point(23, 312);
+			this.txt_LIS1.Name = "txt_LIS1";
+			this.txt_LIS1.Size = new System.Drawing.Size(146, 22);
+			this.txt_LIS1.TabIndex = 4;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label1.Location = new System.Drawing.Point(44, 291);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(111, 18);
+			this.label1.TabIndex = 4;
+			this.label1.Text = "Limite Inferior";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label2.Location = new System.Drawing.Point(44, 356);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(122, 18);
+			this.label2.TabIndex = 5;
+			this.label2.Text = "Limite Superior";
+			// 
+			// txt_LSS1
+			// 
+			this.txt_LSS1.Location = new System.Drawing.Point(23, 377);
+			this.txt_LSS1.Name = "txt_LSS1";
+			this.txt_LSS1.Size = new System.Drawing.Size(146, 22);
+			this.txt_LSS1.TabIndex = 6;
+			// 
+			// btn_CambiosS1
+			// 
+			this.btn_CambiosS1.Location = new System.Drawing.Point(47, 420);
+			this.btn_CambiosS1.Name = "btn_CambiosS1";
+			this.btn_CambiosS1.Size = new System.Drawing.Size(97, 39);
+			this.btn_CambiosS1.TabIndex = 4;
+			this.btn_CambiosS1.Text = "Cambiar";
+			this.btn_CambiosS1.UseVisualStyleBackColor = true;
+			// 
+			// btn_CambiosS2
+			// 
+			this.btn_CambiosS2.Location = new System.Drawing.Point(377, 420);
+			this.btn_CambiosS2.Name = "btn_CambiosS2";
+			this.btn_CambiosS2.Size = new System.Drawing.Size(97, 39);
+			this.btn_CambiosS2.TabIndex = 7;
+			this.btn_CambiosS2.Text = "Cambiar";
+			this.btn_CambiosS2.UseVisualStyleBackColor = true;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label3.Location = new System.Drawing.Point(374, 356);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(122, 18);
+			this.label3.TabIndex = 10;
+			this.label3.Text = "Limite Superior";
+			// 
+			// txt_LSS2
+			// 
+			this.txt_LSS2.Location = new System.Drawing.Point(353, 377);
+			this.txt_LSS2.Name = "txt_LSS2";
+			this.txt_LSS2.Size = new System.Drawing.Size(146, 22);
+			this.txt_LSS2.TabIndex = 11;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label4.Location = new System.Drawing.Point(374, 291);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(111, 18);
+			this.label4.TabIndex = 8;
+			this.label4.Text = "Limite Inferior";
+			// 
+			// txt_LIS2
+			// 
+			this.txt_LIS2.Location = new System.Drawing.Point(353, 312);
+			this.txt_LIS2.Name = "txt_LIS2";
+			this.txt_LIS2.Size = new System.Drawing.Size(146, 22);
+			this.txt_LIS2.TabIndex = 9;
+			// 
+			// btn_CambiosS3
+			// 
+			this.btn_CambiosS3.Location = new System.Drawing.Point(56, 420);
+			this.btn_CambiosS3.Name = "btn_CambiosS3";
+			this.btn_CambiosS3.Size = new System.Drawing.Size(97, 39);
+			this.btn_CambiosS3.TabIndex = 12;
+			this.btn_CambiosS3.Text = "Cambiar";
+			this.btn_CambiosS3.UseVisualStyleBackColor = true;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label5.Location = new System.Drawing.Point(53, 356);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(122, 18);
+			this.label5.TabIndex = 15;
+			this.label5.Text = "Limite Superior";
+			// 
+			// txt_LSS3
+			// 
+			this.txt_LSS3.Location = new System.Drawing.Point(32, 377);
+			this.txt_LSS3.Name = "txt_LSS3";
+			this.txt_LSS3.Size = new System.Drawing.Size(146, 22);
+			this.txt_LSS3.TabIndex = 16;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label6.Location = new System.Drawing.Point(53, 291);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(111, 18);
+			this.label6.TabIndex = 13;
+			this.label6.Text = "Limite Inferior";
+			// 
+			// txt_LIS3
+			// 
+			this.txt_LIS3.Location = new System.Drawing.Point(32, 312);
+			this.txt_LIS3.Name = "txt_LIS3";
+			this.txt_LIS3.Size = new System.Drawing.Size(146, 22);
+			this.txt_LIS3.TabIndex = 14;
+			// 
+			// btn_CambiarTodo
+			// 
+			this.btn_CambiarTodo.Location = new System.Drawing.Point(288, 498);
+			this.btn_CambiarTodo.Name = "btn_CambiarTodo";
+			this.btn_CambiarTodo.Size = new System.Drawing.Size(267, 43);
+			this.btn_CambiarTodo.TabIndex = 12;
+			this.btn_CambiarTodo.Text = "Cambiar todos";
+			this.btn_CambiarTodo.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-			this.ClientSize = new System.Drawing.Size(1067, 698);
-			this.Controls.Add(this.txt_Cadena);
+			this.ClientSize = new System.Drawing.Size(1036, 709);
+			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panelfecha);
 			this.Controls.Add(this.PanelMenu);
+			this.MaximizeBox = false;
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.PanelMenu.ResumeLayout(false);
@@ -422,8 +833,19 @@
 			this.panelfecha.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
+			this.panel4.ResumeLayout(false);
+			this.panel4.PerformLayout();
+			this.panel5.ResumeLayout(false);
+			this.panel5.PerformLayout();
+			this.panel6.ResumeLayout(false);
+			this.panel6.PerformLayout();
+			this.panel7.ResumeLayout(false);
+			this.panel8.ResumeLayout(false);
+			this.panel9.ResumeLayout(false);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -460,6 +882,36 @@
 		private System.Windows.Forms.TextBox txt_tiempo;
 		private System.Windows.Forms.Label lbl_tiempo;
 		private System.Windows.Forms.Button btn_request;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel panel5;
+		private System.Windows.Forms.Label lbl_Sensor1;
+		private System.Windows.Forms.Panel panel7;
+		private CircularProgressBar.CircularProgressBar circularProgressBar1;
+		private System.Windows.Forms.Panel panel6;
+		private System.Windows.Forms.Label lbl_Sensor2;
+		private System.Windows.Forms.Panel panel8;
+		private CircularProgressBar.CircularProgressBar circularProgressBar2;
+		private System.Windows.Forms.Panel panel4;
+		private System.Windows.Forms.Label lbl_Sensor3;
+		private System.Windows.Forms.Panel panel9;
+		private CircularProgressBar.CircularProgressBar circularProgressBar3;
+		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Button btn_CambiosS1;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.TextBox txt_LSS1;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox txt_LIS1;
+		private System.Windows.Forms.Button btn_CambiarTodo;
+		private System.Windows.Forms.Button btn_CambiosS2;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TextBox txt_LSS2;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.TextBox txt_LIS2;
+		private System.Windows.Forms.Button btn_CambiosS3;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox txt_LSS3;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.TextBox txt_LIS3;
 	}
 }
 

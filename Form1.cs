@@ -40,6 +40,7 @@ namespace Practica_4
 		private void TimerControl_Tick(object sender, EventArgs e)
 		{
 			txt_Cadena.Text = mensaje;
+			
 		}
 
 		private void Lora_DataReceived(object sender, SerialDataReceivedEventArgs e)
