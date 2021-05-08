@@ -24,6 +24,9 @@ namespace Practica_4
 		public Form1()
 		{
 			InitializeComponent();
+			ValoresSensores = new string[10];
+
+
 			Lora= new SerialPort();
 			Lora.BaudRate = 9600;
 			Lora.PortName = "COM3";
@@ -34,12 +37,47 @@ namespace Practica_4
 			timerControl = new Timer();
 			timerControl.Interval = 250;
 			timerControl.Enabled = true;
-			timerControl.Tick += TimerControl_Tick;	
+			timerControl.Tick += TimerControl_Tick;
+			timerControl.Stop();
 		}
 
 		private void TimerControl_Tick(object sender, EventArgs e)
 		{
-			txt_Cadena.Text = mensaje;
+			try
+			{
+				txt_Cadena.Text = mensaje;
+				if (ValoresSensores[0] == "~2")
+				{
+					lbl_Sensor1.Text = ValoresSensores[1];
+					Bar_S1.Value = Convert.ToInt32(ValoresSensores[2]);
+					Bar_S1.Text = ValoresSensores[2];
+
+					lbl_Sensor2.Text = ValoresSensores[3];
+					Bar_S2.Value = Convert.ToInt32(ValoresSensores[4]);
+					Bar_S2.Text = ValoresSensores[4];
+
+					lbl_Sensor3.Text = ValoresSensores[5];
+					Bar_S3.Value = Convert.ToInt32(ValoresSensores[6]);
+					Bar_S3.Text = ValoresSensores[6];
+
+				}
+				else if (ValoresSensores[0] == "~1")
+				{
+					lbl_Unidad.Text = ValoresSensores[1];
+				    lbl_Canal.Text = ValoresSensores[5];
+					
+					lbl_direccion.Text = ValoresSensores[6];
+					
+				
+				}
+				
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+				timerControl.Stop();
+			}
+			
 			
 		}
 
