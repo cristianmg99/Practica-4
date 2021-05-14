@@ -29,7 +29,7 @@ namespace Practica_4
 
 			Lora= new SerialPort();
 			Lora.BaudRate = 9600;
-			Lora.PortName = "COM3";
+			Lora.PortName = "COM11";
 			Lora.DataReceived += Lora_DataReceived;
 
 
@@ -45,23 +45,39 @@ namespace Practica_4
 		{
 			try
 			{
-				txt_Cadena.Text = mensaje;
-				if (ValoresSensores[0] == "~2")
+				//txt_Cadena.Text = mensaje;
+				if (ValoresSensores[0] == "~1")
 				{
 					lbl_Sensor1.Text = ValoresSensores[1];
 					Bar_S1.Value = Convert.ToInt32(ValoresSensores[2]);
 					Bar_S1.Text = ValoresSensores[2];
 
-					lbl_Sensor2.Text = ValoresSensores[3];
-					Bar_S2.Value = Convert.ToInt32(ValoresSensores[4]);
-					Bar_S2.Text = ValoresSensores[4];
 
-					lbl_Sensor3.Text = ValoresSensores[5];
+					/*lbl_Sensor2.Text = ValoresSensores[3];
+					Bar_S2.Value = Convert.ToInt32(ValoresSensores[4]);
+					Bar_S2.Text = ValoresSensores[4];*/
+
+					/*lbl_Sensor3.Text = ValoresSensores[5];
 					Bar_S3.Value = Convert.ToInt32(ValoresSensores[6]);
-					Bar_S3.Text = ValoresSensores[6];
+					Bar_S3.Text = ValoresSensores[6];*/
 
 				}
-				else if (ValoresSensores[0] == "~1")
+
+				if (ValoresSensores[0] == "~2")
+				{
+					lbl_Sensor3.Text = ValoresSensores[1];
+					Bar_S3.Value = Convert.ToInt32(ValoresSensores[2]);
+					Bar_S3.Text = ValoresSensores[2];
+				}
+
+				if (ValoresSensores[0] == "~3")
+				{
+					lbl_Sensor2.Text = ValoresSensores[1];
+					Bar_S2.Value = Convert.ToInt32(ValoresSensores[2]);
+					Bar_S2.Text = ValoresSensores[2];
+				}
+
+				/*if (ValoresSensores[0] == "~01")
 				{
 					lbl_Unidad.Text = ValoresSensores[1];
 				    lbl_Canal.Text = ValoresSensores[5];
@@ -69,8 +85,20 @@ namespace Practica_4
 					lbl_direccion.Text = ValoresSensores[6];
 					
 				
+				}*/
+
+				if (ValoresSensores[0] == "~03")
+				{
+					txt_Cadena2.Text = mensaje;
 				}
-				
+				if (ValoresSensores[0] == "~01")
+				{
+					txt_Cadena1.Text = mensaje;
+				}
+
+
+
+
 			}
 			catch (Exception ex)
 			{
@@ -90,7 +118,10 @@ namespace Practica_4
 		{
 			if (Lora.IsOpen)
 			{
-				Lora.WriteLine("~$1/25"); //El $=36  codigo ASCII
+				Lora.WriteLine("~$0/25");
+				Lora.WriteLine("~%0/25");
+				Lora.WriteLine("~&0/25");
+
 			}
 		}
 
@@ -135,9 +166,28 @@ namespace Practica_4
 		{
 			if (Lora.IsOpen)
 			{
-				Lora.WriteLine("~*1/26/"+txt_tiempo.Text); //El *=42  codigo ASCII
-				lbl_tiempo.Text = "Tiempo = " + txt_tiempo.Text +"ms";
-				txt_tiempo.Text = "";	
+				if (chb_unidad1.Checked && chb_unidad3.Checked)
+				{
+					Lora.WriteLine("~$1/26/" + txt_tiempo.Text);
+					Lora.WriteLine("~&3/26/" + txt_tiempo.Text);
+
+					lbl_tiempo.Text = "Tiempo = " + txt_tiempo.Text + "ms";
+					txt_tiempo.Text = "";
+				}
+
+				if (chb_unidad1.Checked)
+				{
+					Lora.WriteLine("~$1/26/" + txt_tiempo.Text);
+					lbl_tiempo.Text = "Tiempo = " + txt_tiempo.Text + "ms";
+					txt_tiempo.Text = "";
+				}
+
+				if (chb_unidad3.Checked)
+				{
+					Lora.WriteLine("~&3/26/" + txt_tiempo.Text);
+					lbl_tiempo.Text = "Tiempo = " + txt_tiempo.Text + "ms";
+					txt_tiempo.Text = "";
+				}
 			}
 
 		}
@@ -146,8 +196,41 @@ namespace Practica_4
 		{
 			if (Lora.IsOpen)
 			{
-				Lora.WriteLine("~$1/20"); //El $=42  codigo ASCII
-				
+				if (chb_unidad1.Checked && chb_unidad2.Checked && chb_unidad3.Checked)
+				{
+					Lora.WriteLine("~$1/20"); 
+					Lora.WriteLine("~%2/20");
+					Lora.WriteLine("~&3/20");
+				}
+				else if (chb_unidad1.Checked && chb_unidad2.Checked)
+				{
+					Lora.WriteLine("~$1/20");
+					Lora.WriteLine("~%2/20");
+				}
+				else if (chb_unidad1.Checked && chb_unidad3.Checked)
+				{
+					Lora.WriteLine("~$1/20"); 
+					Lora.WriteLine("~&3/20");
+				}
+				else if (chb_unidad2.Checked && chb_unidad3.Checked)
+				{
+					Lora.WriteLine("~%2/20");
+					Lora.WriteLine("~&3/20");
+				}
+				else if (chb_unidad1.Checked )
+				{
+					Lora.WriteLine("~$1/20"); 
+				}
+				else if (chb_unidad2.Checked)
+				{
+					Lora.WriteLine("~%2/20");
+				}
+				else if (chb_unidad3.Checked)
+				{
+					Lora.WriteLine("~&3/20");
+				}
+
+
 			}
 		}
 
@@ -160,7 +243,7 @@ namespace Practica_4
 					mensaje = Lora.ReadLine();
 					ValoresSensores = mensaje.Split('/');
 				}
-
+				
 
 			}
 			catch (Exception ex)

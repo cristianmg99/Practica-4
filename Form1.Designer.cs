@@ -29,6 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.PanelMenu = new System.Windows.Forms.Panel();
+			this.chb_unidad3 = new System.Windows.Forms.CheckBox();
+			this.chb_unidad2 = new System.Windows.Forms.CheckBox();
+			this.chb_unidad1 = new System.Windows.Forms.CheckBox();
 			this.btn_request = new System.Windows.Forms.Button();
 			this.btn_Tiempo = new System.Windows.Forms.Button();
 			this.txt_tiempo = new System.Windows.Forms.TextBox();
@@ -39,6 +42,9 @@
 			this.btn_Conectar = new System.Windows.Forms.Button();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panelfecha = new System.Windows.Forms.Panel();
+			this.label7 = new System.Windows.Forms.Label();
+			this.txt_Cadena1 = new System.Windows.Forms.TextBox();
+			this.lbl_direccion = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
@@ -58,56 +64,57 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.lbl_Canal = new System.Windows.Forms.Label();
 			this.lbl_Unidad = new System.Windows.Forms.Label();
-			this.txt_Cadena = new System.Windows.Forms.TextBox();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.panel7 = new System.Windows.Forms.Panel();
-			this.Bar_S1 = new CircularProgressBar.CircularProgressBar();
-			this.panel8 = new System.Windows.Forms.Panel();
-			this.Bar_S2 = new CircularProgressBar.CircularProgressBar();
-			this.panel9 = new System.Windows.Forms.Panel();
-			this.Bar_S3 = new CircularProgressBar.CircularProgressBar();
-			this.lbl_Sensor1 = new System.Windows.Forms.Label();
-			this.lbl_Sensor2 = new System.Windows.Forms.Label();
-			this.lbl_Sensor3 = new System.Windows.Forms.Label();
-			this.txt_LIS1 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
+			this.btn_CambiosS1 = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txt_LSS1 = new System.Windows.Forms.TextBox();
-			this.btn_CambiosS1 = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txt_LIS1 = new System.Windows.Forms.TextBox();
+			this.lbl_Sensor1 = new System.Windows.Forms.Label();
+			this.panel7 = new System.Windows.Forms.Panel();
+			this.Bar_S1 = new CircularProgressBar.CircularProgressBar();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.btn_CambiarTodo = new System.Windows.Forms.Button();
 			this.btn_CambiosS2 = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			this.txt_LSS2 = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.txt_LIS2 = new System.Windows.Forms.TextBox();
+			this.lbl_Sensor2 = new System.Windows.Forms.Label();
+			this.panel8 = new System.Windows.Forms.Panel();
+			this.Bar_S2 = new CircularProgressBar.CircularProgressBar();
+			this.panel4 = new System.Windows.Forms.Panel();
 			this.btn_CambiosS3 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.txt_LSS3 = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.txt_LIS3 = new System.Windows.Forms.TextBox();
-			this.btn_CambiarTodo = new System.Windows.Forms.Button();
-			this.lbl_direccion = new System.Windows.Forms.Label();
+			this.lbl_Sensor3 = new System.Windows.Forms.Label();
+			this.panel9 = new System.Windows.Forms.Panel();
+			this.Bar_S3 = new CircularProgressBar.CircularProgressBar();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.txt_Cadena2 = new System.Windows.Forms.TextBox();
 			this.PanelMenu.SuspendLayout();
 			this.PanelLogo.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.panelfecha.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
-			this.panel3.SuspendLayout();
-			this.panel4.SuspendLayout();
 			this.panel5.SuspendLayout();
-			this.panel6.SuspendLayout();
 			this.panel7.SuspendLayout();
+			this.panel6.SuspendLayout();
 			this.panel8.SuspendLayout();
+			this.panel4.SuspendLayout();
 			this.panel9.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// PanelMenu
 			// 
 			this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.PanelMenu.Controls.Add(this.chb_unidad3);
+			this.PanelMenu.Controls.Add(this.chb_unidad2);
+			this.PanelMenu.Controls.Add(this.chb_unidad1);
 			this.PanelMenu.Controls.Add(this.btn_request);
 			this.PanelMenu.Controls.Add(this.btn_Tiempo);
 			this.PanelMenu.Controls.Add(this.txt_tiempo);
@@ -120,6 +127,39 @@
 			this.PanelMenu.Name = "PanelMenu";
 			this.PanelMenu.Size = new System.Drawing.Size(175, 709);
 			this.PanelMenu.TabIndex = 3;
+			// 
+			// chb_unidad3
+			// 
+			this.chb_unidad3.AutoSize = true;
+			this.chb_unidad3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.chb_unidad3.Location = new System.Drawing.Point(23, 526);
+			this.chb_unidad3.Name = "chb_unidad3";
+			this.chb_unidad3.Size = new System.Drawing.Size(87, 21);
+			this.chb_unidad3.TabIndex = 15;
+			this.chb_unidad3.Text = "Unidad 3";
+			this.chb_unidad3.UseVisualStyleBackColor = true;
+			// 
+			// chb_unidad2
+			// 
+			this.chb_unidad2.AutoSize = true;
+			this.chb_unidad2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.chb_unidad2.Location = new System.Drawing.Point(23, 486);
+			this.chb_unidad2.Name = "chb_unidad2";
+			this.chb_unidad2.Size = new System.Drawing.Size(87, 21);
+			this.chb_unidad2.TabIndex = 14;
+			this.chb_unidad2.Text = "Unidad 2";
+			this.chb_unidad2.UseVisualStyleBackColor = true;
+			// 
+			// chb_unidad1
+			// 
+			this.chb_unidad1.AutoSize = true;
+			this.chb_unidad1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.chb_unidad1.Location = new System.Drawing.Point(23, 449);
+			this.chb_unidad1.Name = "chb_unidad1";
+			this.chb_unidad1.Size = new System.Drawing.Size(87, 21);
+			this.chb_unidad1.TabIndex = 13;
+			this.chb_unidad1.Text = "Unidad 1";
+			this.chb_unidad1.UseVisualStyleBackColor = true;
 			// 
 			// btn_request
 			// 
@@ -234,6 +274,9 @@
 			// panelfecha
 			// 
 			this.panelfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panelfecha.Controls.Add(this.txt_Cadena2);
+			this.panelfecha.Controls.Add(this.label7);
+			this.panelfecha.Controls.Add(this.txt_Cadena1);
 			this.panelfecha.Controls.Add(this.lbl_direccion);
 			this.panelfecha.Controls.Add(this.panel1);
 			this.panelfecha.Controls.Add(this.lbl_Canal);
@@ -243,6 +286,35 @@
 			this.panelfecha.Name = "panelfecha";
 			this.panelfecha.Size = new System.Drawing.Size(861, 100);
 			this.panelfecha.TabIndex = 7;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label7.Location = new System.Drawing.Point(323, 10);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(151, 17);
+			this.label7.TabIndex = 9;
+			this.label7.Text = "Unidades encontradas";
+			// 
+			// txt_Cadena1
+			// 
+			this.txt_Cadena1.Location = new System.Drawing.Point(6, 31);
+			this.txt_Cadena1.Multiline = true;
+			this.txt_Cadena1.Name = "txt_Cadena1";
+			this.txt_Cadena1.Size = new System.Drawing.Size(808, 28);
+			this.txt_Cadena1.TabIndex = 8;
+			// 
+			// lbl_direccion
+			// 
+			this.lbl_direccion.AutoSize = true;
+			this.lbl_direccion.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_direccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.lbl_direccion.Location = new System.Drawing.Point(617, 26);
+			this.lbl_direccion.Name = "lbl_direccion";
+			this.lbl_direccion.Size = new System.Drawing.Size(31, 33);
+			this.lbl_direccion.TabIndex = 8;
+			this.lbl_direccion.Text = "0";
 			// 
 			// panel1
 			// 
@@ -419,7 +491,7 @@
 			this.lbl_Canal.AutoSize = true;
 			this.lbl_Canal.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbl_Canal.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lbl_Canal.Location = new System.Drawing.Point(204, 9);
+			this.lbl_Canal.Location = new System.Drawing.Point(204, 26);
 			this.lbl_Canal.Name = "lbl_Canal";
 			this.lbl_Canal.Size = new System.Drawing.Size(31, 33);
 			this.lbl_Canal.TabIndex = 1;
@@ -436,13 +508,6 @@
 			this.lbl_Unidad.TabIndex = 0;
 			this.lbl_Unidad.Text = "0";
 			// 
-			// txt_Cadena
-			// 
-			this.txt_Cadena.Location = new System.Drawing.Point(126, 11);
-			this.txt_Cadena.Name = "txt_Cadena";
-			this.txt_Cadena.Size = new System.Drawing.Size(589, 22);
-			this.txt_Cadena.TabIndex = 8;
-			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.Red;
@@ -455,32 +520,6 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(861, 609);
 			this.panel2.TabIndex = 9;
-			// 
-			// panel3
-			// 
-			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-			this.panel3.Controls.Add(this.txt_Cadena);
-			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel3.Location = new System.Drawing.Point(0, 0);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(861, 47);
-			this.panel3.TabIndex = 0;
-			// 
-			// panel4
-			// 
-			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-			this.panel4.Controls.Add(this.btn_CambiosS3);
-			this.panel4.Controls.Add(this.label5);
-			this.panel4.Controls.Add(this.txt_LSS3);
-			this.panel4.Controls.Add(this.label6);
-			this.panel4.Controls.Add(this.txt_LIS3);
-			this.panel4.Controls.Add(this.lbl_Sensor3);
-			this.panel4.Controls.Add(this.panel9);
-			this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-			this.panel4.Location = new System.Drawing.Point(661, 47);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(200, 562);
-			this.panel4.TabIndex = 1;
 			// 
 			// panel5
 			// 
@@ -498,22 +537,62 @@
 			this.panel5.Size = new System.Drawing.Size(200, 562);
 			this.panel5.TabIndex = 2;
 			// 
-			// panel6
+			// btn_CambiosS1
 			// 
-			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-			this.panel6.Controls.Add(this.btn_CambiarTodo);
-			this.panel6.Controls.Add(this.btn_CambiosS2);
-			this.panel6.Controls.Add(this.label3);
-			this.panel6.Controls.Add(this.txt_LSS2);
-			this.panel6.Controls.Add(this.label4);
-			this.panel6.Controls.Add(this.txt_LIS2);
-			this.panel6.Controls.Add(this.lbl_Sensor2);
-			this.panel6.Controls.Add(this.panel8);
-			this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel6.Location = new System.Drawing.Point(0, 47);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(661, 562);
-			this.panel6.TabIndex = 3;
+			this.btn_CambiosS1.Location = new System.Drawing.Point(47, 420);
+			this.btn_CambiosS1.Name = "btn_CambiosS1";
+			this.btn_CambiosS1.Size = new System.Drawing.Size(97, 39);
+			this.btn_CambiosS1.TabIndex = 4;
+			this.btn_CambiosS1.Text = "Cambiar";
+			this.btn_CambiosS1.UseVisualStyleBackColor = true;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label2.Location = new System.Drawing.Point(44, 356);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(122, 18);
+			this.label2.TabIndex = 5;
+			this.label2.Text = "Limite Superior";
+			// 
+			// txt_LSS1
+			// 
+			this.txt_LSS1.Location = new System.Drawing.Point(23, 377);
+			this.txt_LSS1.Name = "txt_LSS1";
+			this.txt_LSS1.Size = new System.Drawing.Size(146, 22);
+			this.txt_LSS1.TabIndex = 6;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.label1.Location = new System.Drawing.Point(44, 291);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(111, 18);
+			this.label1.TabIndex = 4;
+			this.label1.Text = "Limite Inferior";
+			// 
+			// txt_LIS1
+			// 
+			this.txt_LIS1.Location = new System.Drawing.Point(23, 312);
+			this.txt_LIS1.Name = "txt_LIS1";
+			this.txt_LIS1.Size = new System.Drawing.Size(146, 22);
+			this.txt_LIS1.TabIndex = 4;
+			// 
+			// lbl_Sensor1
+			// 
+			this.lbl_Sensor1.AutoSize = true;
+			this.lbl_Sensor1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.lbl_Sensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_Sensor1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_Sensor1.Location = new System.Drawing.Point(0, 0);
+			this.lbl_Sensor1.Name = "lbl_Sensor1";
+			this.lbl_Sensor1.Size = new System.Drawing.Size(128, 32);
+			this.lbl_Sensor1.TabIndex = 2;
+			this.lbl_Sensor1.Text = "Sensor 1";
 			// 
 			// panel7
 			// 
@@ -557,169 +636,31 @@
 			this.Bar_S1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
 			this.Bar_S1.Value = 180;
 			// 
-			// panel8
+			// panel6
 			// 
-			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-			this.panel8.Controls.Add(this.Bar_S2);
-			this.panel8.Location = new System.Drawing.Point(333, 66);
-			this.panel8.Name = "panel8";
-			this.panel8.Size = new System.Drawing.Size(191, 203);
-			this.panel8.TabIndex = 1;
+			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel6.Controls.Add(this.btn_CambiarTodo);
+			this.panel6.Controls.Add(this.btn_CambiosS2);
+			this.panel6.Controls.Add(this.label3);
+			this.panel6.Controls.Add(this.txt_LSS2);
+			this.panel6.Controls.Add(this.label4);
+			this.panel6.Controls.Add(this.txt_LIS2);
+			this.panel6.Controls.Add(this.lbl_Sensor2);
+			this.panel6.Controls.Add(this.panel8);
+			this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel6.Location = new System.Drawing.Point(0, 47);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(661, 562);
+			this.panel6.TabIndex = 3;
 			// 
-			// Bar_S2
+			// btn_CambiarTodo
 			// 
-			this.Bar_S2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-			this.Bar_S2.AnimationSpeed = 500;
-			this.Bar_S2.BackColor = System.Drawing.Color.Transparent;
-			this.Bar_S2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Bar_S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Bar_S2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.Bar_S2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.Bar_S2.InnerMargin = 2;
-			this.Bar_S2.InnerWidth = -1;
-			this.Bar_S2.Location = new System.Drawing.Point(0, 0);
-			this.Bar_S2.MarqueeAnimationSpeed = 2000;
-			this.Bar_S2.Maximum = 500;
-			this.Bar_S2.Name = "Bar_S2";
-			this.Bar_S2.OuterColor = System.Drawing.Color.Gray;
-			this.Bar_S2.OuterMargin = -25;
-			this.Bar_S2.OuterWidth = 26;
-			this.Bar_S2.ProgressColor = System.Drawing.Color.Cyan;
-			this.Bar_S2.ProgressWidth = 25;
-			this.Bar_S2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Bar_S2.Size = new System.Drawing.Size(191, 203);
-			this.Bar_S2.StartAngle = 270;
-			this.Bar_S2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-			this.Bar_S2.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-			this.Bar_S2.SubscriptText = "";
-			this.Bar_S2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-			this.Bar_S2.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-			this.Bar_S2.SuperscriptText = "ppm";
-			this.Bar_S2.TabIndex = 0;
-			this.Bar_S2.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-			this.Bar_S2.Value = 68;
-			// 
-			// panel9
-			// 
-			this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-			this.panel9.Controls.Add(this.Bar_S3);
-			this.panel9.Location = new System.Drawing.Point(6, 66);
-			this.panel9.Name = "panel9";
-			this.panel9.Size = new System.Drawing.Size(191, 203);
-			this.panel9.TabIndex = 2;
-			// 
-			// Bar_S3
-			// 
-			this.Bar_S3.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-			this.Bar_S3.AnimationSpeed = 500;
-			this.Bar_S3.BackColor = System.Drawing.Color.Transparent;
-			this.Bar_S3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Bar_S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Bar_S3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.Bar_S3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.Bar_S3.InnerMargin = 2;
-			this.Bar_S3.InnerWidth = -1;
-			this.Bar_S3.Location = new System.Drawing.Point(0, 0);
-			this.Bar_S3.MarqueeAnimationSpeed = 2000;
-			this.Bar_S3.Maximum = 2000;
-			this.Bar_S3.Name = "Bar_S3";
-			this.Bar_S3.OuterColor = System.Drawing.Color.Gray;
-			this.Bar_S3.OuterMargin = -25;
-			this.Bar_S3.OuterWidth = 26;
-			this.Bar_S3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-			this.Bar_S3.ProgressWidth = 25;
-			this.Bar_S3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Bar_S3.Size = new System.Drawing.Size(191, 203);
-			this.Bar_S3.StartAngle = 270;
-			this.Bar_S3.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-			this.Bar_S3.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-			this.Bar_S3.SubscriptText = "";
-			this.Bar_S3.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-			this.Bar_S3.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-			this.Bar_S3.SuperscriptText = "";
-			this.Bar_S3.TabIndex = 0;
-			this.Bar_S3.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-			this.Bar_S3.Value = 68;
-			// 
-			// lbl_Sensor1
-			// 
-			this.lbl_Sensor1.AutoSize = true;
-			this.lbl_Sensor1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.lbl_Sensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_Sensor1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.lbl_Sensor1.Location = new System.Drawing.Point(0, 0);
-			this.lbl_Sensor1.Name = "lbl_Sensor1";
-			this.lbl_Sensor1.Size = new System.Drawing.Size(128, 32);
-			this.lbl_Sensor1.TabIndex = 2;
-			this.lbl_Sensor1.Text = "Sensor 1";
-			// 
-			// lbl_Sensor2
-			// 
-			this.lbl_Sensor2.AutoSize = true;
-			this.lbl_Sensor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_Sensor2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.lbl_Sensor2.Location = new System.Drawing.Point(327, 8);
-			this.lbl_Sensor2.Name = "lbl_Sensor2";
-			this.lbl_Sensor2.Size = new System.Drawing.Size(128, 32);
-			this.lbl_Sensor2.TabIndex = 3;
-			this.lbl_Sensor2.Text = "Sensor 2";
-			// 
-			// lbl_Sensor3
-			// 
-			this.lbl_Sensor3.AutoSize = true;
-			this.lbl_Sensor3.Dock = System.Windows.Forms.DockStyle.Top;
-			this.lbl_Sensor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_Sensor3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.lbl_Sensor3.Location = new System.Drawing.Point(0, 0);
-			this.lbl_Sensor3.Name = "lbl_Sensor3";
-			this.lbl_Sensor3.Size = new System.Drawing.Size(128, 32);
-			this.lbl_Sensor3.TabIndex = 4;
-			this.lbl_Sensor3.Text = "Sensor 3";
-			// 
-			// txt_LIS1
-			// 
-			this.txt_LIS1.Location = new System.Drawing.Point(23, 312);
-			this.txt_LIS1.Name = "txt_LIS1";
-			this.txt_LIS1.Size = new System.Drawing.Size(146, 22);
-			this.txt_LIS1.TabIndex = 4;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.label1.Location = new System.Drawing.Point(44, 291);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(111, 18);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "Limite Inferior";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.label2.Location = new System.Drawing.Point(44, 356);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(122, 18);
-			this.label2.TabIndex = 5;
-			this.label2.Text = "Limite Superior";
-			// 
-			// txt_LSS1
-			// 
-			this.txt_LSS1.Location = new System.Drawing.Point(23, 377);
-			this.txt_LSS1.Name = "txt_LSS1";
-			this.txt_LSS1.Size = new System.Drawing.Size(146, 22);
-			this.txt_LSS1.TabIndex = 6;
-			// 
-			// btn_CambiosS1
-			// 
-			this.btn_CambiosS1.Location = new System.Drawing.Point(47, 420);
-			this.btn_CambiosS1.Name = "btn_CambiosS1";
-			this.btn_CambiosS1.Size = new System.Drawing.Size(97, 39);
-			this.btn_CambiosS1.TabIndex = 4;
-			this.btn_CambiosS1.Text = "Cambiar";
-			this.btn_CambiosS1.UseVisualStyleBackColor = true;
+			this.btn_CambiarTodo.Location = new System.Drawing.Point(288, 498);
+			this.btn_CambiarTodo.Name = "btn_CambiarTodo";
+			this.btn_CambiarTodo.Size = new System.Drawing.Size(267, 43);
+			this.btn_CambiarTodo.TabIndex = 12;
+			this.btn_CambiarTodo.Text = "Cambiar todos";
+			this.btn_CambiarTodo.UseVisualStyleBackColor = true;
 			// 
 			// btn_CambiosS2
 			// 
@@ -766,6 +707,75 @@
 			this.txt_LIS2.Size = new System.Drawing.Size(146, 22);
 			this.txt_LIS2.TabIndex = 9;
 			// 
+			// lbl_Sensor2
+			// 
+			this.lbl_Sensor2.AutoSize = true;
+			this.lbl_Sensor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_Sensor2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_Sensor2.Location = new System.Drawing.Point(327, 8);
+			this.lbl_Sensor2.Name = "lbl_Sensor2";
+			this.lbl_Sensor2.Size = new System.Drawing.Size(128, 32);
+			this.lbl_Sensor2.TabIndex = 3;
+			this.lbl_Sensor2.Text = "Sensor 2";
+			// 
+			// panel8
+			// 
+			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel8.Controls.Add(this.Bar_S2);
+			this.panel8.Location = new System.Drawing.Point(333, 66);
+			this.panel8.Name = "panel8";
+			this.panel8.Size = new System.Drawing.Size(191, 203);
+			this.panel8.TabIndex = 1;
+			// 
+			// Bar_S2
+			// 
+			this.Bar_S2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+			this.Bar_S2.AnimationSpeed = 500;
+			this.Bar_S2.BackColor = System.Drawing.Color.Transparent;
+			this.Bar_S2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Bar_S2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Bar_S2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.Bar_S2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.Bar_S2.InnerMargin = 2;
+			this.Bar_S2.InnerWidth = -1;
+			this.Bar_S2.Location = new System.Drawing.Point(0, 0);
+			this.Bar_S2.MarqueeAnimationSpeed = 2000;
+			this.Bar_S2.Maximum = 500;
+			this.Bar_S2.Name = "Bar_S2";
+			this.Bar_S2.OuterColor = System.Drawing.Color.Gray;
+			this.Bar_S2.OuterMargin = -25;
+			this.Bar_S2.OuterWidth = 26;
+			this.Bar_S2.ProgressColor = System.Drawing.Color.Cyan;
+			this.Bar_S2.ProgressWidth = 25;
+			this.Bar_S2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Bar_S2.Size = new System.Drawing.Size(191, 203);
+			this.Bar_S2.StartAngle = 270;
+			this.Bar_S2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.Bar_S2.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+			this.Bar_S2.SubscriptText = "";
+			this.Bar_S2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.Bar_S2.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+			this.Bar_S2.SuperscriptText = "ppm";
+			this.Bar_S2.TabIndex = 0;
+			this.Bar_S2.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+			this.Bar_S2.Value = 68;
+			// 
+			// panel4
+			// 
+			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel4.Controls.Add(this.btn_CambiosS3);
+			this.panel4.Controls.Add(this.label5);
+			this.panel4.Controls.Add(this.txt_LSS3);
+			this.panel4.Controls.Add(this.label6);
+			this.panel4.Controls.Add(this.txt_LIS3);
+			this.panel4.Controls.Add(this.lbl_Sensor3);
+			this.panel4.Controls.Add(this.panel9);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+			this.panel4.Location = new System.Drawing.Point(661, 47);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(200, 562);
+			this.panel4.TabIndex = 1;
+			// 
 			// btn_CambiosS3
 			// 
 			this.btn_CambiosS3.Location = new System.Drawing.Point(56, 420);
@@ -811,25 +821,76 @@
 			this.txt_LIS3.Size = new System.Drawing.Size(146, 22);
 			this.txt_LIS3.TabIndex = 14;
 			// 
-			// btn_CambiarTodo
+			// lbl_Sensor3
 			// 
-			this.btn_CambiarTodo.Location = new System.Drawing.Point(288, 498);
-			this.btn_CambiarTodo.Name = "btn_CambiarTodo";
-			this.btn_CambiarTodo.Size = new System.Drawing.Size(267, 43);
-			this.btn_CambiarTodo.TabIndex = 12;
-			this.btn_CambiarTodo.Text = "Cambiar todos";
-			this.btn_CambiarTodo.UseVisualStyleBackColor = true;
+			this.lbl_Sensor3.AutoSize = true;
+			this.lbl_Sensor3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.lbl_Sensor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_Sensor3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.lbl_Sensor3.Location = new System.Drawing.Point(0, 0);
+			this.lbl_Sensor3.Name = "lbl_Sensor3";
+			this.lbl_Sensor3.Size = new System.Drawing.Size(128, 32);
+			this.lbl_Sensor3.TabIndex = 4;
+			this.lbl_Sensor3.Text = "Sensor 3";
 			// 
-			// lbl_direccion
+			// panel9
 			// 
-			this.lbl_direccion.AutoSize = true;
-			this.lbl_direccion.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_direccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lbl_direccion.Location = new System.Drawing.Point(617, 9);
-			this.lbl_direccion.Name = "lbl_direccion";
-			this.lbl_direccion.Size = new System.Drawing.Size(31, 33);
-			this.lbl_direccion.TabIndex = 8;
-			this.lbl_direccion.Text = "0";
+			this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel9.Controls.Add(this.Bar_S3);
+			this.panel9.Location = new System.Drawing.Point(6, 66);
+			this.panel9.Name = "panel9";
+			this.panel9.Size = new System.Drawing.Size(191, 203);
+			this.panel9.TabIndex = 2;
+			// 
+			// Bar_S3
+			// 
+			this.Bar_S3.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+			this.Bar_S3.AnimationSpeed = 500;
+			this.Bar_S3.BackColor = System.Drawing.Color.Transparent;
+			this.Bar_S3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Bar_S3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Bar_S3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.Bar_S3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.Bar_S3.InnerMargin = 2;
+			this.Bar_S3.InnerWidth = -1;
+			this.Bar_S3.Location = new System.Drawing.Point(0, 0);
+			this.Bar_S3.MarqueeAnimationSpeed = 2000;
+			this.Bar_S3.Maximum = 2000;
+			this.Bar_S3.Name = "Bar_S3";
+			this.Bar_S3.OuterColor = System.Drawing.Color.Gray;
+			this.Bar_S3.OuterMargin = -25;
+			this.Bar_S3.OuterWidth = 26;
+			this.Bar_S3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+			this.Bar_S3.ProgressWidth = 25;
+			this.Bar_S3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Bar_S3.Size = new System.Drawing.Size(191, 203);
+			this.Bar_S3.StartAngle = 270;
+			this.Bar_S3.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.Bar_S3.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+			this.Bar_S3.SubscriptText = "";
+			this.Bar_S3.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+			this.Bar_S3.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+			this.Bar_S3.SuperscriptText = "";
+			this.Bar_S3.TabIndex = 0;
+			this.Bar_S3.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+			this.Bar_S3.Value = 68;
+			// 
+			// panel3
+			// 
+			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel3.Location = new System.Drawing.Point(0, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(861, 47);
+			this.panel3.TabIndex = 0;
+			// 
+			// txt_Cadena2
+			// 
+			this.txt_Cadena2.Location = new System.Drawing.Point(6, 56);
+			this.txt_Cadena2.Multiline = true;
+			this.txt_Cadena2.Name = "txt_Cadena2";
+			this.txt_Cadena2.Size = new System.Drawing.Size(808, 28);
+			this.txt_Cadena2.TabIndex = 10;
 			// 
 			// Form1
 			// 
@@ -852,16 +913,14 @@
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
-			this.panel4.ResumeLayout(false);
-			this.panel4.PerformLayout();
 			this.panel5.ResumeLayout(false);
 			this.panel5.PerformLayout();
+			this.panel7.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
 			this.panel6.PerformLayout();
-			this.panel7.ResumeLayout(false);
 			this.panel8.ResumeLayout(false);
+			this.panel4.ResumeLayout(false);
+			this.panel4.PerformLayout();
 			this.panel9.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -895,7 +954,7 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label lbl_Canal;
 		private System.Windows.Forms.Label lbl_Unidad;
-		private System.Windows.Forms.TextBox txt_Cadena;
+		private System.Windows.Forms.TextBox txt_Cadena1;
 		private System.Windows.Forms.Button btn_Tiempo;
 		private System.Windows.Forms.TextBox txt_tiempo;
 		private System.Windows.Forms.Label lbl_tiempo;
@@ -931,6 +990,11 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox txt_LIS3;
 		private System.Windows.Forms.Label lbl_direccion;
+		private System.Windows.Forms.CheckBox chb_unidad3;
+		private System.Windows.Forms.CheckBox chb_unidad2;
+		private System.Windows.Forms.CheckBox chb_unidad1;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.TextBox txt_Cadena2;
 	}
 }
 
